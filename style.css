@@ -1,0 +1,185 @@
+body{
+    margin: 0%;
+    /* for stopping scroll behavior */
+    overflow: hidden;
+    font-size: 14;
+}
+
+/*Instructing everyone to use this property here*/
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+}
+
+.title-bar{
+    height: 5vh;
+    background-color: #107c41;
+    /*by default flex direction is row*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.menu-bar{
+    height: 5vh;
+    background-color: #107c41;
+    display: flex;
+}
+
+.menu-item{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    font-size: 18;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item.selected{
+    background-color: #fff;
+    color: #107c41;
+}
+
+.menu-item:hover{
+    background-color: #0c6936;
+    cursor: pointer;
+}
+
+.menu-item.selected:hover{
+    background-color: #fff;
+    cursor: default;
+}
+.menu-icon-bar{
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+}
+
+.menu-icon{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.selector{
+    height: 30px;
+    font-size: 17px;
+}
+
+.font-family-selector{
+    width: auto;
+}
+
+.selector option{
+    font-size: 17px;
+}
+
+.formula-bar{
+    height: 5vh;
+}
+
+.data-container{
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .row-name-container{
+    height: ;
+}
+
+.column-name-container{
+    height: ;
+}
+
+.input-cell-container{
+    height: ;
+} */
+
+.select-all{
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgrey;
+}
+
+.column-name-container{
+    height: 30px;
+    width: calc(100vw - 30px);
+    border: 1px solid lightgrey;
+}
+
+.row-name-container{
+    height: calc(75vh - 30px);
+    width: 30px;
+    border: 1px solid lightgrey;
+}
+
+.input-cell-container{
+    width: calc(100vw - 30px);
+    height: calc(75vh - 30px);
+    border: 1px solid lightgrey;
+}
+
+.sheet-bar{
+    height: 4vh;
+    display: flex;
+    align-items: center;
+}
+
+.scroller{
+    width: 70px;
+
+}
+
+.icon-left-scroll, .icon-right-scroll{
+    font-size: 30px;
+}
+
+.icon-left-scroll:hover, .icon-right-scroll:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.icon-add{
+    color: #107c41;
+    width: 40px;
+}
+
+.icon-add:hover{
+    cursor: pointer;
+    color: darkgreen;
+    transform: scale(1.2);
+}
+
+.sheet-tab-container{
+    border: 1px solid lightgreen;
+    width: calc(100vw - 110px);
+}
+
+.sheet-tab{
+    border-bottom: 4px solid #107c41;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    width: 80px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+    border-right: 1px solid lightgray;
+}
+
+.sheet-tab:hover{
+    cursor: default;
+}
